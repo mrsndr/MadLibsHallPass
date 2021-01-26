@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Mad Libs Hall Pass</string>
+    <string name="app_name">Assignment 1</string>
+
+    <string name="app_title">Mad Libs Hall Pass</string>
+    <string name="short_instructions_text">On the lines below please enter\n 1. A Name\n 2. A Noun\n 3. An Event\nThen press Make My Hall Pass</string>
+    <string name="enter_name_text_hint">Add a Name</string>
+    <string name="enter_noun_text_hint">Add a Noun</string>
+    <string name="enter_event_text_hint">Add an Event</string>
+    <string name="make_hall_pass_button">Make My Hall Pass</string>
+    <string name="clear_entry_button">Clear</string>
+
 </resources>

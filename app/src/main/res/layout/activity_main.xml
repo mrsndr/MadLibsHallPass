@@ -7,29 +7,45 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewAppTitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/app_title"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textViewShortInstructions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:text="Short Instructions"
-        android:textAlignment="center"
+        android:text="@string/short_instructions_text"
+        android:textAlignment="textStart"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitleText" />
 
     <EditText
         android:id="@+id/editTextEnterName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
+        android:hint="@string/enter_name_text_hint"
         android:inputType="textPersonName"
-        android:text="Enter Name Field"
         android:textAlignment="textStart"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,8 +60,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
+        android:hint="@string/enter_noun_text_hint"
         android:inputType="textPersonName"
-        android:text="Enter Noun"
         android:textAlignment="textStart"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,8 +76,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
+        android:hint="@string/enter_event_text_hint"
         android:inputType="textPersonName"
-        android:text="Enter Event"
         android:textAlignment="textStart"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,24 +88,22 @@
         android:id="@+id/buttonClearTexts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Clear Button"
+        android:layout_marginTop="24dp"
+        android:text="@string/clear_entry_button"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMakeHallPass" />
 
     <Button
         android:id="@+id/buttonMakeHallPass"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="24dp"
-        android:text="Make Hall Pass Button"
+        android:layout_marginTop="50dp"
+        android:text="@string/make_hall_pass_button"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonClearTexts"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEnterEvent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
