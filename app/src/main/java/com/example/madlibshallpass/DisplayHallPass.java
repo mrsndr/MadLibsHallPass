@@ -2,7 +2,12 @@ package com.example.madlibshallpass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class DisplayHallPass extends AppCompatActivity {
 
@@ -10,5 +15,24 @@ public class DisplayHallPass extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_hall_pass);
+
+        // Get the intent
+        Intent showHallPass = getIntent();
+
+        String mName = showHallPass.getStringExtra(MainActivity.MName);
+        String mNoun = showHallPass.getStringExtra(MainActivity.MNoun);
+        String mEvent = showHallPass.getStringExtra(MainActivity.MEvent);
+
+        // https://developer.android.com/reference/java/text/SimpleDateFormat
+        String myOtherDate = new SimpleDateFormat("E MMMM dd").format(new Date());
+
+        TextView textViewDateBox = findViewById(R.id.textViewDateBox);
+        textViewDateBox.setText("Date: " + myOtherDate);
+
+        TextView textViewFilledTextArea =findViewById(R.id.textViewFilledTextArea);
+        textViewFilledTextArea.setText(mName + mNoun + mEvent);
+
+
+
     }
 }
