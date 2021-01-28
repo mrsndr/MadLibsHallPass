@@ -10,10 +10,10 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
 
-    //public static final String EXTRA_MESSAGE = "com.example.madlibhallpass.MESSAGE";
-    public static final String MName = "com.example.madlibhallpass.MESSAGE";
-    public static final String MNoun = "com.example.madlibhallpass.MESSAGE";
-    public static final String MEvent = "com.example.madlibhallpass.MESSAGE";
+    // public static final String EXTRA_MESSAGE = "com.example.madlibhallpass.MESSAGE";
+    public static final String EXTRA_MName = "com.example.madlibhallpass.MName";
+    public static final String EXTRA_MNoun = "com.example.madlibhallpass.MNoun";
+    public static final String EXTRA_MEvent = "com.example.madlibhallpass.MEvent";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void clearButonClicked(View view) {
         // Clear the three input boxes when this button ic clicked
+        EditText inputName = (EditText) findViewById(R.id.editTextEnterName);
+        EditText inputNoun = (EditText) findViewById(R.id.editTextEnterNoun);
+        EditText inputEvent = (EditText) findViewById(R.id.editTextEnterEvent);
 
-
-
+        inputName.setText("");
+        inputNoun.setText("");
+        inputEvent.setText("");
 
     }
 
@@ -48,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
         showHallPass.putExtra(EXTRA_MESSAGE, mEvent);
         */
 
-        showHallPass.putExtra(MName, mName);
-        showHallPass.putExtra(MNoun, mNoun);
-        showHallPass.putExtra(MEvent, mEvent);
+        showHallPass.putExtra(EXTRA_MName, mName);
+        showHallPass.putExtra(EXTRA_MNoun, mNoun);
+        showHallPass.putExtra(EXTRA_MEvent, mEvent);
 
 
         //showHallPass.putExtra(EXTRA_MESSAGE, new String[] {mName, mNoun, mEvent});

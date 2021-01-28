@@ -19,9 +19,9 @@ public class DisplayHallPass extends AppCompatActivity {
         // Get the intent
         Intent showHallPass = getIntent();
 
-        String mName = showHallPass.getStringExtra(MainActivity.MName);
-        String mNoun = showHallPass.getStringExtra(MainActivity.MNoun);
-        String mEvent = showHallPass.getStringExtra(MainActivity.MEvent);
+        String mName = showHallPass.getStringExtra(MainActivity.EXTRA_MName);
+        String mNoun = showHallPass.getStringExtra(MainActivity.EXTRA_MNoun);
+        String mEvent = showHallPass.getStringExtra(MainActivity.EXTRA_MEvent);
 
         // https://developer.android.com/reference/java/text/SimpleDateFormat
         String myOtherDate = new SimpleDateFormat("E MMMM dd").format(new Date());
@@ -30,7 +30,7 @@ public class DisplayHallPass extends AppCompatActivity {
         textViewDateBox.setText("Date: " + myOtherDate);
 
         TextView textViewFilledTextArea =findViewById(R.id.textViewFilledTextArea);
-        textViewFilledTextArea.setText(mName + mNoun + mEvent);
+        textViewFilledTextArea.setText(mName + " is too cool for " + mNoun + " class.\nInstead, they will be attending the " + mEvent + " event.");
 
 
 
