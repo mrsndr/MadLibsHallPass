@@ -61,9 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         //showHallPass.putExtra(EXTRA_MESSAGE, new String[] {mName, mNoun, mEvent});
 
-
         startActivity(showHallPass);
-
 
     }
 

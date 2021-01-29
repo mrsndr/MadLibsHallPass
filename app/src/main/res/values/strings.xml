@@ -9,8 +9,12 @@
     <string name="make_hall_pass_button">Make My Hall Pass</string>
     <string name="clear_entry_button">Clear</string>
 
-    <string name="mad_libs_title_text">Mad Libs</string>
+    <string name="mad_libs_title_text">Mad :) Libs</string>
     <string name="hall_pass_title_text">Hall Pass</string>
+    <string name="hall_pass_signed_text">SIGNED:</string>
+    <string name="hall_pass_copywrite_text">MAD LIBS is a registered trade mark of Penguin Group Random House Inc. www.madlibs.com</string>
+
+
 
 
 

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".DisplayHallPass">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="792dp"
@@ -13,6 +14,7 @@
         android:rotation="-90"
         android:text="@string/hall_pass_title_text"
         android:textAlignment="textStart"
+        android:textColor="@color/black"
         android:textSize="120sp"
         android:translationX="-300dp"
         android:translationY="-400dp"
@@ -26,6 +28,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/mad_libs_title_text"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,10 +37,11 @@
         android:id="@+id/textViewDateBox"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:layout_marginTop="24dp"
+        android:text="TextView_Date"
         android:textAlignment="textStart"
-        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -46,9 +50,34 @@
         android:layout_width="400dp"
         android:layout_height="0dp"
         android:layout_marginTop="24dp"
-        android:lineSpacingExtra="8dp"
-        android:text="TextView"
-        android:textSize="40sp"
+        android:lineSpacingExtra="30dp"
+        android:text="TextView_String"
+        android:textColor="@color/black"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewDateBox" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="384dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:text="@string/hall_pass_signed_text"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFilledTextArea" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hall_pass_copywrite_text"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
