@@ -24,7 +24,7 @@ public class DisplayHallPass extends AppCompatActivity {
         String mEvent = showHallPass.getStringExtra(MainActivity.EXTRA_MEvent);
 
         // https://developer.android.com/reference/java/text/SimpleDateFormat
-        String myOtherDate = new SimpleDateFormat("E MMMM dd").format(new Date());
+        String myOtherDate = new SimpleDateFormat("EEEEE MMMM dd").format(new Date());
 
         TextView textViewDateBox = findViewById(R.id.textViewDateBox);
         textViewDateBox.setText("Date: " + myOtherDate);

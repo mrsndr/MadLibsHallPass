@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         inputNoun.setText("");
         inputEvent.setText("");
 
+        inputName.requestFocus();
+
     }
 
     public void displayHallPassButtonClicked (View view) {
